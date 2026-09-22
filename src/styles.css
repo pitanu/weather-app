@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme { --font-sans: "Inter", "DM Sans", ui-sans-serif, system-ui, sans-serif; }
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+.starfield-canvas { position: fixed; inset: 0; z-index: 0; width: 100vw; height: 100vh; pointer-events: none; }
+.aurora { position: fixed; z-index: 0; border-radius: 999px; filter: blur(105px); opacity: .18; pointer-events: none; }
+.aurora-one { width: 28rem; height: 28rem; background: #263e9d; top: 9rem; left: -15rem; }
+.aurora-two { width: 28rem; height: 28rem; background: #432e96; bottom: -13rem; right: -12rem; }
+.text-gradient { background: linear-gradient(100deg, #c4b5fd, #8be7ff 55%, #a78bfa); -webkit-background-clip: text; background-clip: text; color: transparent; }
